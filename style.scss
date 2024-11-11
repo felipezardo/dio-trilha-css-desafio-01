@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Raleway', sans-serif;;
+    color: white;
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 62.6vh;
+        background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(./assets/banner.png);
+        background-size: cover;    
+        // border-bottom: solid #33A8DB;
+        border-width: 0.7px;
+        padding-top: 60px;
+        color:  #ffffff;
+        font-size: 1.25rem;
+        text-align: center;
+    
+        .logo{
+            width: 255px;
+            
+        }
+    
+    
+        
+    
+        h1{
+            font-weight: 900;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            // Para deixar a cor da letra com degrade é necessário definir um background
+            background: linear-gradient(#33A8DB, #1472B7);        
+            // Após definido o degradê,apagamos desta forma tudo que não estiver imediatamente atrás do texto
+            background-clip: text;
+            // em seguida deixamos o texto transparente de forma que apareça a cor do fundo
+            color: transparent;
+            margin: 15px;
+           
+    
+        }
+        p{
+            width: 30em;
+        }
+        
+        button{
+            background-color: transparent;
+            border-image:linear-gradient(#3BA1CD, #1572B7) ;
+            border-image-slice: 10;
+            border-radius: 30px;
+            margin-top: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #31A8DD;
+            letter-spacing: 4px;
+            padding: 16px 32px ;
+            cursor: pointer;
+           
+
+            &:hover{
+              
+                transform: scale(1.05);
+            }
+        }
+    
+        
+    
+    }
+
+    .modulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 80px;
+        border-top: solid #33A8DB;
+        border-width: 0.7px;
+        span{
+            color: #33A8DB;
+        }
+
+        h2{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #33A8DB;
+            margin: 20px 0 25px 0;
+            letter-spacing: 4px;
+        }
+
+        p{
+            width: 800px;
+           
+        }
+        
+        ul{
+            list-style: none;
+            li{
+                border: solid #1572B7;
+                padding: 16px 55px;
+                margin: 20px;
+                border-radius: 30px;
+                background-color: #252525;
+               box-shadow: -2px 6px 4px 0px rgb(0, 0, 0, .7) inset;
+               border-width: 1px;
+            }
+        }
+
+
+    }
+
+    .transforme{
+        border-top: solid #33A8DB;
+        border-bottom: solid #33A8DB;
+        
+        border-width: 0.7px;
+        background-size: cover;
+        background-image: url(./assets/woman-code.png);
+        background-attachment: fixed;
+        padding: 250px;
+
+        h2{
+            font-size: 2.5rem;
+            font-weight: 900;
+            max-width: 250px;
+            text-shadow:  3px 2px  #33A8DB;
+        }
+    }
+
+    .desafios{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        text-align: center;
+        
+        margin: 100px 138.5px;
+
+
+        h2{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #33A8DB;
+            margin: 20px 0 25px 0;
+            letter-spacing: 4px;
+            max-width: 690px;
+        }
+
+        img{
+            margin: 32px 0;
+        }
+
+        p{
+            max-width: 800px;
+        }
+        
+    }
+
+    footer{
+
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0;
+        text-align: center;
+        align-items: center;
+        color: #ffffff;
+        border-top: solid #33A8DB;
+        border-width: 0.7px;
+        background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+        p{
+            margin: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color:#33A8DB ;
+            font-weight: bold;            
+        }
+    }
+
+}
+
